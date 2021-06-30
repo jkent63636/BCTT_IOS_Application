@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  BuffaloConcussionTreamillTest
+//  BCTT_IOS_And_Watch
 //
-//  Created by Joshua Kent on 6/23/21.
+//  Created by Joshua Kent on 6/30/21.
 //
 
 import SwiftUI
