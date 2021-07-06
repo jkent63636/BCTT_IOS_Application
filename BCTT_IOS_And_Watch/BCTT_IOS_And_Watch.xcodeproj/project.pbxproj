@@ -20,6 +20,8 @@
 		8F861AF5268D130B004094AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F861AF4268D130B004094AF /* Assets.xcassets */; };
 		8F861AF8268D130B004094AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F861AF7268D130B004094AF /* Preview Assets.xcassets */; };
 		8F861B0A268D1692004094AF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F861B09268D1692004094AF /* HealthKit.framework */; };
+		8F86EA252694B3BB00C079AA /* ViewModelPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86EA242694B3BB00C079AA /* ViewModelPhone.swift */; };
+		8F86EA272694B51800C079AA /* ViewModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86EA262694B51800C079AA /* ViewModelWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		8F861AF9268D130B004094AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F861B07268D1692004094AF /* BCTT_IOS_And_Watch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BCTT_IOS_And_Watch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		8F861B09268D1692004094AF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		8F86EA242694B3BB00C079AA /* ViewModelPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelPhone.swift; sourceTree = "<group>"; };
+		8F86EA262694B51800C079AA /* ViewModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 				8F861AD5268D1309004094AF /* Assets.xcassets */,
 				8F861ADA268D1309004094AF /* Info.plist */,
 				8F861AD7268D1309004094AF /* Preview Content */,
+				8F86EA242694B3BB00C079AA /* ViewModelPhone.swift */,
 			);
 			path = BCTT_IOS_And_Watch;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				8F861AF4268D130B004094AF /* Assets.xcassets */,
 				8F861AF9268D130B004094AF /* Info.plist */,
 				8F861AF6268D130B004094AF /* Preview Content */,
+				8F86EA262694B51800C079AA /* ViewModelWatch.swift */,
 			);
 			path = "BCTT_IOS_And_Watch WatchKit Extension";
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F86EA252694B3BB00C079AA /* ViewModelPhone.swift in Sources */,
 				8F861AD4268D1308004094AF /* ContentView.swift in Sources */,
 				8F861AD2268D1308004094AF /* BCTT_IOS_And_WatchApp.swift in Sources */,
 			);
@@ -325,6 +332,7 @@
 			files = (
 				8F861AF1268D130A004094AF /* BCTT_IOS_And_WatchApp.swift in Sources */,
 				8F861AEF268D130A004094AF /* ContentView.swift in Sources */,
+				8F86EA272694B51800C079AA /* ViewModelWatch.swift in Sources */,
 				8F861AF3268D130A004094AF /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,10 +9,13 @@ import SwiftUI
 import HealthKit
 
 struct ContentView: View {
+    
+    var model = ViewModelWatch()
+    
     private var healthStore = HKHealthStore()
     let heartRateQuantity = HKUnit(from: "count/min")
     
-    @State private var value = 0
+    @State private var heartRateStateVar = 0
     
     var body: some View {
         VStack{
@@ -24,7 +27,7 @@ struct ContentView: View {
             }
             
             HStack{
-                Text("\(value)")
+                Text("\(heartRateStateVar)")
                     .fontWeight(.regular)
                     .font(.system(size: 70))
                 
@@ -45,7 +48,10 @@ struct ContentView: View {
 
     
     func start() {
+        //authorize access to heart rate
         autorizeHealthKit()
+        
+        //starts query to get heart rate
         startHeartRateQuery(quantityTypeIdentifier: .heartRate)
     }
     
@@ -92,9 +98,17 @@ struct ContentView: View {
             if type == .heartRate {
                 lastHeartRate = sample.quantity.doubleValue(for: heartRateQuantity)
             }
-            print(lastHeartRate)
             
-            self.value = Int(lastHeartRate)
+            //Times and prints HR
+            let currentDateTime = Date()
+            print("\(currentDateTime): \(lastHeartRate)")
+            
+            self.heartRateStateVar = Int(lastHeartRate)
+            
+            //sends message from watch to iPhone
+            self.model.session.sendMessage(["message" : self.heartRateStateVar], replyHandler: nil) { (error) in
+                print(error.localizedDescription)
+            }
         }
     }
 }
