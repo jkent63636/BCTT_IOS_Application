@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F4CC46326A755A5006F2EBC /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CC46226A755A5006F2EBC /* WelcomeScreen.swift */; };
+		8F4CC46526A76084006F2EBC /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CC46426A76084006F2EBC /* StopWatchManager.swift */; };
 		8F861AD2268D1308004094AF /* BCTT_IOS_And_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F861AD1268D1308004094AF /* BCTT_IOS_And_WatchApp.swift */; };
-		8F861AD4268D1308004094AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F861AD3268D1308004094AF /* ContentView.swift */; };
+		8F861AD4268D1308004094AF /* ActivityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F861AD3268D1308004094AF /* ActivityScreen.swift */; };
 		8F861AD6268D1309004094AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F861AD5268D1309004094AF /* Assets.xcassets */; };
 		8F861AD9268D1309004094AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F861AD8268D1309004094AF /* Preview Assets.xcassets */; };
 		8F861ADE268D1309004094AF /* BCTT_IOS_And_Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8F861ADD268D1309004094AF /* BCTT_IOS_And_Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -67,9 +69,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8F4CC46226A755A5006F2EBC /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		8F4CC46426A76084006F2EBC /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
 		8F861ACE268D1308004094AF /* BCTT_IOS_And_Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCTT_IOS_And_Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F861AD1268D1308004094AF /* BCTT_IOS_And_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCTT_IOS_And_WatchApp.swift; sourceTree = "<group>"; };
-		8F861AD3268D1308004094AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F861AD3268D1308004094AF /* ActivityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScreen.swift; sourceTree = "<group>"; };
 		8F861AD5268D1309004094AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F861AD8268D1309004094AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F861ADA268D1309004094AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,7 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				8F861AD1268D1308004094AF /* BCTT_IOS_And_WatchApp.swift */,
-				8F861AD3268D1308004094AF /* ContentView.swift */,
+				8F861AD3268D1308004094AF /* ActivityScreen.swift */,
+				8F4CC46426A76084006F2EBC /* StopWatchManager.swift */,
+				8F4CC46226A755A5006F2EBC /* WelcomeScreen.swift */,
 				8F861AD5268D1309004094AF /* Assets.xcassets */,
 				8F861ADA268D1309004094AF /* Info.plist */,
 				8F861AD7268D1309004094AF /* Preview Content */,
@@ -321,7 +327,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F86EA252694B3BB00C079AA /* ViewModelPhone.swift in Sources */,
-				8F861AD4268D1308004094AF /* ContentView.swift in Sources */,
+				8F4CC46526A76084006F2EBC /* StopWatchManager.swift in Sources */,
+				8F861AD4268D1308004094AF /* ActivityScreen.swift in Sources */,
+				8F4CC46326A755A5006F2EBC /* WelcomeScreen.swift in Sources */,
 				8F861AD2268D1308004094AF /* BCTT_IOS_And_WatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import SwiftUI
 struct BCTT_IOS_And_WatchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeScreen()
         }
     }
 }

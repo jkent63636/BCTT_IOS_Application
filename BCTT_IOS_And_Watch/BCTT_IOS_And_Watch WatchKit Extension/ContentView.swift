@@ -21,26 +21,18 @@ struct ContentView: View {
         VStack{
             HStack{
                 Text("❤️")
-                    .font(.system(size: 50))
-                Spacer()
-
-            }
-            
-            HStack{
+                    .font(.system(size: 20))
+                
                 Text("\(heartRateStateVar)")
                     .fontWeight(.regular)
-                    .font(.system(size: 70))
+                    .font(.system(size: 65))
                 
                 Text("BPM")
                     .font(.headline)
                     .fontWeight(.bold)
                     .foregroundColor(Color.red)
                     .padding(.bottom, 28.0)
-                
-                Spacer()
-                
             }
-
         }
         .padding()
         .onAppear(perform: start)
