@@ -71,7 +71,7 @@ struct ActivityScreen: View {
                     .font(.system(size: 55))
                 
                 Text("\(heartRateToDisplay)").onReceive(timer, perform: { _ in
-                    heartRateToDisplay = String(self.model.heartRateFromWatch)
+                    //heartRateToDisplay = String(self.model.heartRateFromWatch)
                     
                     if stopWatchManager.secondsElapsed % 5 == 0 && stopWatchManager.secondsElapsed != 0 {
                         //create a timp stamp
@@ -81,7 +81,8 @@ struct ActivityScreen: View {
                         let hrToSend = [Int(heartRateToDisplay) ?? -1]
                         
                         //for testing
-                        //let hrToSend = [Int.random(in: 1..<100)]
+                        //let hrToSend = [Int.random(in: 70..<90)]
+                        //heartRateToDisplay = "\(hrToSend[0])"
                         
                         self.pushData(heartRate: hrToSend, timeStamp: time)
                     }

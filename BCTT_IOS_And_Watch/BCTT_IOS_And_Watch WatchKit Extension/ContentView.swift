@@ -17,15 +17,32 @@ struct ContentView: View {
     
     @State private var heartRateStateVar = 0
     
+    //for simulator
+    //let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    
     var body: some View {
         VStack{
             HStack{
                 Text("❤️")
                     .font(.system(size: 20))
                 
+                //for actual device
                 Text("\(heartRateStateVar)")
                     .fontWeight(.regular)
                     .font(.system(size: 65))
+                
+                //for simulator
+//                Text("\(heartRateStateVar)").onReceive(timer, perform: { _ in
+//                    heartRateStateVar = Int.random(in: 70..<90)
+//
+//                    //sends message from watch to iPhone
+//                    self.model.session.sendMessage(["message" : self.heartRateStateVar], replyHandler: nil) { (error) in
+//                        print(error.localizedDescription)
+//                    }
+//                })
+//                    .font(.system(size: 65))
+                
+                
                 
                 Text("BPM")
                     .font(.headline)
@@ -95,6 +112,7 @@ struct ContentView: View {
             let currentDateTime = Date()
             print("\(currentDateTime): \(lastHeartRate)")
             
+            //Use when running on actual watch
             self.heartRateStateVar = Int(lastHeartRate)
             
             //sends message from watch to iPhone
